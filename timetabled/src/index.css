@@ -19,3 +19,35 @@ td {
 .time {
   height: 40px;
 }
+
+.Event {
+  width: 100px;
+}
+
+.Event h6, h5 {
+  line-height: 0px;
+  align-content: center;
+}
+
+.Event.red { background-color: #e74c3c; }      /* Red */
+.Event.blue { background-color: #3498db; }     /* Blue */
+.Event.green { background-color: #2ecc71; }    /* Green */
+.Event.yellow { background-color: #f1c40f; color: black; } /* Yellow */
+.Event.purple { background-color: #9b59b6; }   /* Purple */
+.Event.orange { background-color: #e67e22; }   /* Orange */
+.Event.pink { background-color: #ff69b4; }     /* Pink */
+.Event.teal { background-color: #1abc9c; }     /* Teal */
+.Event.gray { background-color: #7f8c8d; }     /* Gray */
+.Event.black { background-color: #2c3e50; }    /* Black */
+.Event.white { background-color: #ecf0f1; color: black; } /* White */
+.Event.brown { background-color: #8d6e63; }    /* Brown */
+.Event.cyan { background-color: #00bcd4; }     /* Cyan */
+.Event.lime { background-color: #cddc39; color: black; } /* Lime */
+.Event.indigo { background-color: #3f51b5; }   /* Indigo */
+.Event.gold { background-color: #ffd700; color: black; } /* Gold */
+
+/* Hover effect for better interaction */
+.Event:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
