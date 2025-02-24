@@ -19,6 +19,24 @@ const App = () => {
           onClick={updateCount}
         />
       </div>
+
+      <div className="container">
+        <div className="upgrade">
+          <h3>Double Stuffed 👯‍♀️</h3>
+          <p>2x per click</p>
+          <button onClick={() => setMultiplier(2)}>Buy for 10 Samosas</button>
+        </div>
+        <div className="upgrade">
+          <h3>Party Pack 🎉</h3>
+          <p>5x per click</p>
+          <button onClick={() => setMultiplier(2)}>Buy for 100 Samosas</button>
+        </div>
+        <div className="upgrade">
+          <h3>Full Feast 👩🏽‍🍳</h3>
+          <p>10x per click</p>
+          <button onClick={() => setMultiplier(2)}>Buy for 1000 Samosas</button>
+        </div>
+      </div>
     </div>
   )
 
