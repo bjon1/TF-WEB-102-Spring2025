@@ -19,6 +19,15 @@
   text-align: center;
 }
 
+.samosa:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.samosa:active {
+  transform: scale(0.95);
+}
+
 .upgrade {
   border: 1px solid rgba(153, 153, 153, 0.497);
   padding: 20px 10px;
@@ -39,3 +48,4 @@ button {
   cursor: pointer;
   margin-top: 10px;
 }
+
