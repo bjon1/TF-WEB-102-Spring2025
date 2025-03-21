@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import './App.css';
 import APIForm from './components/APIform';
+import Gallery from './components/gallery'
 
 const ACCESS_KEY = import.meta.env.VITE_APP_ACCESS_KEY;
 
 const App = () => {
   const [currentImage, setCurrentImage] = useState(null);
+  const [prevImages, setPrevImages] = useState([]);
   const [inputs, setInputs] = useState({
     url: '',
     format: '',
@@ -49,6 +51,7 @@ const App = () => {
         alert("Oops! Something went wrong with that query, let's try again!");
       } else {
         setCurrentImage(data.url);
+        setPrevImages((prevImages) => [...prevImages, data.url]);
         reset();
       }
     } catch (error) {
@@ -110,6 +113,9 @@ const App = () => {
           &no_cookie_banners={inputs.no_cookie_banners} <br />
           &no_ads={inputs.no_ads} <br />
         </p>
+      </div>
+      <div className="container">
+        <Gallery images={prevImages} />
       </div>
     </div>
   );
